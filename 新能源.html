@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新能源汽车调查</title>
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    width: 21cm;  /* A4纸宽度 */
+    height: auto; /* A4纸高度 */
+    margin: auto; /* 居中显示 */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* 添加阴影效果 */
+    border: 1px solid rgba(0,0,0,0.1); /* 添加边框 */
+    }
+
+        .container {
+    width: 100%; /* 容器宽度100% */
+    padding: 5px;
+    
+        
+    
+}
+
+
+.chy{
+	/* 设置整个容器的背景图片 */
+        background-image: url(../../图片/8.jpg);
+        background-size: cover; /* 让背景图片铺满整个容器 */
+        background-position: center; /* 居中对齐背景图片 */
+      /* 添加内边距，增加内容与边框的距离 */
+}
+.box2 img,
+.box3 img {
+    max-width: 80%; /* 图片宽度最大100% */
+    height: auto;
+    display: center;
+    margin: 0 auto; /* 图片居中 */
+}
+
+p, .box1 p {
+    max-width: 100%; /* 段落最大宽度100% */
+    margin: 0 auto 20px;
+    text-align: justify; /* 文本两端对齐 */
+}
+
+        .left {
+            float: left;
+            text-align: left;
+            width: 50%;
+        }
+        .right {
+            float: right;
+            text-align: right;
+            width: 100%;
+        }
+        h1 {
+            font-size: 40px;
+            margin: 40px 40px;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: fantasy;
+        }
+        .box1 {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .box1 p {
+            max-width: 600px;
+            margin: 0 auto 20px;
+            text-align: center;
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+            letter-spacing: 1.5px;
+        }
+       .box-k-b {
+       	width: 21cm;
+       	height: auto;
+       	
+    margin-top: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.box-k-b li {
+    display: inline-block;
+    margin-right: 10px; /* 控制列表项之间的间距 */
+}
+
+.box-k-b li:first-child {
+    margin-left: 0; /* 最左侧的列表项无左侧间距 */
+}
+
+.box-k-b li a {
+    font-size: 37px; /* 字体大小 */
+    display: inline-block;
+    padding: 5px 10px; /* 调整链接内边距 */
+    color: #FFFFFF;
+    text-decoration: none;
+    white-space: nowrap; /* 禁止文本换行 */
+   font-weight: bold;
+}
+
+
+ h2{
+            font-weight: bold; /* 设置引言字体加粗 */
+            margin-top: 0; /* 移除引言顶部的默认间距 */
+             margin-left: 0;  /* 移除标题的首行缩进 */
+            font-size: 40px;
+        }
+        .box2 img{
+        	max-width: 100%; 
+        	height: auto;
+        }
+        
+         .box3 img {
+            width: 1000px; 
+   			height: auto;
+   			display: block;
+    		margin: 0 auto;
+		}
+		.box-1 p{
+			 text-indent: 2em; /* 段落首行缩进 */
+            font-size: 24px;
+            
+            text-align: left; 
+		}
+		/* 隐藏所有图片 */
+.slideshow-container img {
+    display: none;
+}
+
+/* 显示当前图片 */
+.slideshow-container img.mySlides {
+    display: block;
+}
+/* 轮播容器样式 */
+.box2 {
+    position: relative; /* 确保相对定位 */
+    max-width: 100%; /* 可根据需要调整最大宽度 */
+}
+
+/* 图片轮播容器样式 */
+.slideshow-container {
+    position: relative;
+    display: inline-block; /* 设置为内联块，使得控制按钮可以相对于它定位 */
+}
+
+/* 控制按钮样式 */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3); /* 按钮背景颜色 */
+    color: white; /* 按钮文字颜色 */
+    font-size: 18px; /* 按钮文字大小 */
+    cursor: pointer;
+}
+
+.prev {
+    left: 0; /* 左侧放置 */
+}
+
+.next {
+    right: 0; /* 右侧放置 */
+}
+
+.box-o p{
+	max-width: 600px;
+            margin: 0 auto 20px;
+            text-align: center;
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+            letter-spacing: 1.5px;
+	
+}
+ .box-l {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 0px solid #; /* 可选：为了更好地看到盒子的边界 */
+            padding: 20px;
+            text-align: center;
+            
+        }
+        @font-face {
+            font-family: 'YourCustomFont';
+            src: url('path/to/your/font.woff2') format('woff2'),
+                 url('path/to/your/font.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        .left h1, .right h1 {
+            font-family:"", Arial, sans-serif;
+            /* 其他样式如字体大小、颜色等 */
+        }
+       .box-ah {
+            height: calc(var(--a4-height) / 4); /* 设置为 A4 纸高度的四分之一 */
+            width: 75%; /* 设置宽度为自由设置 */
+            background: linear-gradient(to right, #0000FF, #00A4FF); /* 从左到右的绿色渐变 *//* 绿色渐变背景 */
+            padding: 20px; /* 可选：增加内边距 */
+            text-align: center; /* 文本居中 */
+        }
+
+        .box-ah h2 {
+            margin: 0; /* 清除段落的默认外边距 */
+            color: white; /* 字体颜色 */
+            font-size: 24px; /* 字体大小 */
+            font-weight: bold; /* 加粗字体 */
+            text-transform: uppercase; /* 文本大写 */
+        }
+        .box-as{
+        	width: auto;80
+        	height: px;
+        	background-color: #F3F3F4;
+        	 border: 3px solid #ccc
+        }
+        .boxf {
+    position: relative; /* 让 .box3 成为定位上下文 */
+    width: 100%;
+    max-width: 100%; /* 让图片可以平铺在屏幕上 */
+}
+
+.image {
+    width: 100%; /* 让图片宽度充满父容器 */
+    display: block;
+}
+
+.text-container {
+    position: absolute; /* 绝对定位，使文字层在图片上层 */
+    top: 0;
+    right: 0;
+    width: 50%; /* 文字容器宽度，占据右侧一半 */
+     /* 文字背景颜色，设置透明度 */
+    padding: 20px;
+    box-sizing: border-box; /* 内边距不会撑大容器 */
+    text-align: justify; /* 文本两边对齐 */
+}
+
+.text-container p {
+	font-size:20px ;
+    margin-bottom: 10px; /* 段落间距 */
+}
+
+h3{
+	font-size: 35px;
+}
+
+.boxs  p{
+        	font-size: 25px;
+        	text-indent: 2em;
+        	padding: 5px;
+        }
+        
+        
+        
+        
+        
+        
+        
+   
+        
+        .box-5 {
+        border: 1px solid #ccc; /* 添加边框 */
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+        padding: 20px; /* 添加内边距，增加内容与边框的距离 */
+    }
+
+    </style>
+</head>
+<body>
+	<div class="chy">
+<div class="container">
+	
+	<div class="box2">
+	<ul class="box-k-b">
+    <li>
+        <a href="http://127.0.0.1:8020/javaweb%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/src/%E6%96%B0%E8%83%BD%E6%BA%90.html"></a>
+    </li>
+    <li>
+        <a href="http://127.0.0.1:8020/javaweb%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/src/%E5%8B%87%E7%AB%8B%E6%BD%AE%E5%A4%B4.html"></a>
+    </li>
+    <li>
+        <a href="http://127.0.0.1:8020/javaweb%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/src/%E4%B9%98%E9%A3%8E%E7%A0%B4%E6%B5%AA.html"></a>
+    </li>
+    <li>
+        <a href="http://127.0.0.1:8020/javaweb%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/src/%E6%BF%80%E6%B5%81%E5%8B%87%E8%BF%9B.html"></a>
+    </li>
+</ul>
+	
+	</br>	
+	</br>
+	</br>
+	
+</div>
+<div class="box-l">
+    <!--<div class="left">
+        <h1>从“新”出发</h1>
+    </div>
+    <div class="right">
+        <h1>数说中国新能源汽车出海之路</h1>
+    </div>-->
+    </div>
+</div>
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+</div>
+<div class="box-as">
+	
+</div>
+</br><div class="box-ah">
+	<h2>引言</h2>
+</div>
+</br></br></br></br></br></br>
+<div class="box1">
+    <p>在我国提出“碳达峰”和“碳中和”的发展目标下，开发新燃料汽车技术将成为中国缓解能源危机和污染问题的可行手段。</p>
+    <p>近些年，“中国智造”强势崛起，在“一带一路”的助推下，中国制造的产品不仅在国内取得广泛支持与认可，更是频频走出国门，迈向世界。拥有先</p>
+    <p>今年政府工作报告中，5次提及汽车，3次提及新能源汽车。绿色发展是高质量发展的底色，新质生产力本身就是绿色生产力。</p>
+</div>
+</br></br></br></br></br></br>
+<div class="box-as">
+	
+</div>
+</br>
+ <div class="box-ah">
+ 	<h2>扬帆起航：驶向全球化浪潮</h2>
+ </div>
+ </br>
+ <div class="box-1">
+    <p>新能源汽车作为外贸“新三样”产品之一，持续走俏。目前，中国新能源汽车产业处于世界领先地位，同时新能源汽车也是中国出口增长最快的产品之一。2023年中国总计出口新能源乘用车120万辆，同比增长77.6%。其中，12月新能源汽车出口11.1万辆，环比增长15.2%，同比增长36.5%。</p>
+
+ </div>
+<div>
+	<img src="../../图片/1.png"style="max-width: 100%; height: auto;>
+</div>
+
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	</br>
+ 	</br>
+ 	
+ 	<div class="box-1">
+    </br>
+    <p>近些年来，中国新能源汽车出口规模不断扩大，新能源汽车在欧盟和亚洲国家大受欢迎。
+        近三年来，新能源汽车共出口海外183个国家和地区，总出口量排名前五的国家分别是：
+        比利时、泰国、英国、菲律宾、孟加拉国。2024年1-5月中国新能源汽车在巴西出口量达到13万辆，
+        同比暴涨10倍，超越比利时，成为中国新能源汽车最大的出口国。</p>
+</div>
+
+
+
+
+<div>
+	<img src="../../图片/2.png"style="max-width: 100%; height: auto;>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+    </div>
+</div>
+
+
+
+</br>
+<div class="box-1">
+<p>新能源汽车市场，就像一场没有硝烟的战争，而国内的车企们，显然已经在这个战场上“大打出手”。
+	2024年，中国新能源汽车第一梯队车企“1+1+3+5”新格局正在形成。1家龙头电动车企（比亚迪）、
+	1家“新生态车企”（赛力斯）、3家新势力车企（蔚来、理想、小鹏）和5家转型车企（广汽埃安、上汽、长安、长城、吉利）。
+</p>
+
+
+</br>
+<div class="box-1">
+<p>4.中国新能源汽车海外市场进步“不可逆转”，消费者的喜爱溢于言表。雪牛资本(Snow Bull Capital)首席执行官Taylor Ogan在社交平台Twitter(X)发布的调查问卷中显示，全球最受消费者持乐观态度的电动汽车品牌中，NIO（蔚来）、BYD（比亚迪）、XPeng（小鹏）分别占据第二、第三和第四名。</p>
+</div>
+</div>
+
+</div>
+</br>
+</br>
+<div class="box-as">
+	
+</div>
+</br>
+
+
+<div class="box-ah">
+ 	<h2>勇立潮头：以科技创新镌刻时代里程碑</h2>
+ </div>
+ </br>
+ <div class="box-1">
+    </br>
+    <p>新能源汽车全方位创新多维发展。逐浪智能化、跨界融合化、车路云一体化……不断展现出来的新技术、新趋势和新空间，让新能源汽车赛道越来越“卷”。我国新能源汽车销量排名前十位的重点企业全球有效专利量已经超过10万件，并且呈逐年快速增长势头。在锂电池特别是固态电池领域，中国是全球主要的技术来源国之一。近5年，我国固态电池全球专利申请量年均增长20.8%，增速位列全球第一。在太阳能电池方面，目前我国全球专利申请量为12.64万件，排名第一，同样具备较强的创新实力。</p>
+</div>
+
+
+<div>
+	<img src="../../图片/专利.png"style="max-width: 100%; height: auto;>
+</div>
+
+ 
+ 
+ </br>
+<div class="box-as">
+	
+</div>
+<div class="box-1">
+    </br>
+    <p>中国品牌的市占率翻番、销售均价节节高、产品品质的跃迁，新能源汽车取代传统燃油车成为市场主流，都离不开这个“卷”。尤其是“卷技术”“卷产品”“卷品质”，比亚迪、吉利、长安、奇瑞等中国品牌不断加大研发投入，成就了征战全球汽车市场的技术领先和强大竞争力。2023年，比亚迪研发投入399亿元，是全球拥有研发人员最多的汽车公司；2024Q1研发投入更是达到106.11亿元，同比增长70%。2021年至今，比亚迪累计研发预计已超过800亿元，即便放眼全球也是头部玩家。</p>
+</div>
+
+<iframe title="[ 2023年中国新能源车企研发投入]" aria-label="条形图" id="datawrapper-chart-c3lSp" src="https://datawrapper.dwcdn.net/c3lSp/1/" scrolling="no" frameborder="0" style="width: 100%; height: 368px; border: none;" data-external="1"></iframe>
+<script type="text/javascript">
+    !function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+
+
+
+
+
+ 	<div class="box-as">
+	
+</div>
+</br>
+ 	
+ 	</br>
+ 	<div class="box-ah">
+    <h2>乘风破浪：逆风而上 向阳而生</h2>
+</div>
+<h3>破局，逆流上</h3>
+
+<div class="box-1">
+    <p>新能源汽车领域的消费者，千人千面，存在较大的区域差异性。
+        亚洲和欧洲是中国新能源汽车出口的主要市场，截止2023年占比超过70%。
+        插电式混合动力汽车在南美洲最为耀眼，增长速度快，占比高。</p>
+</div>
+
+
+
+
+<iframe title="[中国汽车出口结构]" aria-label="Dot Plot" id="datawrapper-chart-KBe1Y" src="https://datawrapper.dwcdn.net/KBe1Y/1/" scrolling="no" frameborder="0" style="width: 800px; height: 50px;  border: none;"></iframe>
+<script type="text/javascript">
+    !function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+
+</br>
+</br>
+</br>
+</br>
+
+ 	<div class="box-as">
+	
+</div>
+</br>
+<div>
+
+<div style="display: flex; font-family: Arial, sans-serif; background-color: #f0f0f0; padding: 0px; 
+    	line-height: 1.6; width: 21cm; height: 21.7cm; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    	border: 1px solid rgba(0,0,0,0.1);">
+    <div style="flex: 1; padding-right: 20px;">
+        <div class="boxs">
+            <p>近些年欧美国家对中国新能源汽车发展设置了许多障碍，包括消费需求不够旺盛和某些国家和地区存在的滥用贸易救济措施等保护主义行径。2024年7月4日，欧盟委员会宣布对中国新能源汽车征收临时反补贴税，拟在目前10%的关税基础上，征收17.4%至38.1%不等的临时反补贴税，这一决策长达208页，显示了对中国新能源汽车的严格限制，比亚迪、吉利和上汽等主要车企分别面临不同程度的税率。</p>
+        </div>
+        <div>
+            <img src="../../照片2/数据分析8.png" style="max-width: 100%; height: auto;">
+        </div>
+    </div>
+    
+    <div style="flex: 1; padding-left: 20px;">
+        <div>
+            <img src="../../照片2/数据分析9.png" style="max-width: 100%; height: auto;">
+            	<img src="../../照片2/数据12.png" style="max-width: 100%; height: auto;">
+        </div>
+           
+</div>
+</br>
+   </div>         
+
+
+</br>
+</br>
+
+
+</br>
+ <div class="box-1">
+    <p>尽管新能源汽车技术已有显著进步，但与传统的燃油汽车相比，其续航里程和充电效率仍有待提高，仍需不断进行技术升级和优化。
+        2024年车企竞相布局插混技术，综合续航里程“卷”至2000公里，到2024年6月底，我国已经建成充电桩数量突破 1000万台。</p>
+</div>
+
+<div>
+	<img src="../../图片/续航.png"style="max-width: 100%; height: auto;>
+</div>
+
+
+
+
+
+ 	<div class="box-as">
+	</div>
+<h3>识局，乘风起</h3>
+<div class="box-1">
+ <p>尽管新能源汽车技术已有显著进步，但与传统的燃油汽车相比，其续航里程和充电效率仍有待提高，仍需不断进行技术升级和优化。
+ 	2024年车企竞相布局插混技术，综合续航里程“卷”至2000公里，到2024年6月底，我国已经建成充电桩数量突破 1000万台。</div>
+</br>
+
+
+<div class="box-as">
+	</div>
+</br>
+<div class="box-ah">
+ 	<h2>急流勇进：多措并举，让出海之路持续“热辣滚烫”</h2>
+ </div>
+ </br>
+ <div class="box-1">
+ <p>新能源汽车作为外贸“新三样”产品之一，持续走俏。目前，中国新能源汽车产业处于世界领先地位，同时新能源汽车也是中国出口增长最快的产品之一。2023年
+ 	中国总计出口新能源乘用车120万辆，同比增长77.6%。其中，12月新能源汽车出口11.1万辆，环比增长15.2%，同比增长36.5%。</p>
+ 	</div>
+ 	</br>
+ 	<div class="box-5">
+    <div class="box1">
+    	<h3>五大措施
+    	</h3>
+        <p>（一）做好知识产权侵权风险评估与维权基础。
+            重视打造中国自主品牌并建立完备知识产权管理体系及技术秘密合规保护方案。</p>
+        <p>（二）遵守目的国准入标准并留足动态调整空间，重视本土化合作。
+            对该国家/地区现行适用的技术标准和认证要求（如欧美的数据隐私保护法案GDPR、CPRA以及欧盟新电池法规等）进行充分的尽职调查分析，考虑与已符合当地高标准要求的本土厂商进行必要的生产合作。</p>
+        <p>（三）优化境外营销网络布局，重视品牌境内商誉影响。
+            企业应与目的国营销体系完备、覆盖广泛、口碑良好的经销商达成深度合作并以明晰的协议条款对授权经销范围、产品质量保障、售后维修服务、消费者数据安全等核心内容予以确认。</p>
+        <p>（四）关注境内外通关监管政策，加强物流清关合作管理。
+            中国车企首先应关注境内出口监管规定，运输、清关服务协议及出口信用保险协议的条款约定，筛选优质跨境物流清关合作伙伴，善用境外海关官方公示的数据信息。</p>
+        <p>（五）强化境外售后保障能力及纠纷处理能力。
+            针对海外消费者投诉或引起监管部门质疑关注的新能源汽车产品，车企应及时主动采取售后保障措施（如退换货、召回等）并对该产品及供应商进行内部检测核查，形成自查报告并向海外消费者/监管部门进行如实披露。</p>
+    </div>
+</div>
+
+
+</br>
+</br>
+<div class="box-as">
+	</div>
+</br>
+<div class="box-ah">
+ 	<h2>从“新”出发 驶向未来</h2>
+ </div>
+ </br> 
+ <div class="box1">
+    <p>当前，我国已培育起全球最大的新能源汽车产业人才池，形成了世界上最大的汽车生产基地，生产设备和技术条件均位居世界前列，新能源汽车产能规模连续多年居世界第一位。中国已经成为全球新能源汽车竞争的主战场。</p>
+    <p>根据国际能源署测算，2030年全球新能源汽车需求量将达4500万辆，在超过130个国家和地区提出碳中和目标的背景下，全球对绿色产能的需求远远大于产出。</p>
+    <p>在全球汽车从燃油向新能源加速转型的关键当口，中国汽车行业牢牢守住了赛道，融合了自动化生产、智能网联、自动驾驶、超级快充等技术，将智能化贯穿于上中下游全产业链，不断探索除电能外，氢能、天然气、生物质能等其他动能，实现了史诗级的伟大超越。</p>
+	<p>此后每一天，你，和我，都将见证中国新能源汽车的历史。</p>
+ </div>
+</br></br></br></br></br></br>
+</body>
+</html>
